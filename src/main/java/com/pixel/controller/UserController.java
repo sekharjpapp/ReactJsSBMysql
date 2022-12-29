@@ -23,7 +23,7 @@ public class UserController {
     public User findByUserById(@PathVariable int id) throws UserNotFoundException {
         return userService.getUserById(id);
     }
-    @PostMapping("/insert")
+    @PostMapping("/userInsert")
     public User addUsers(@RequestBody User user) {
         return userService.insertUser(user);
     }
