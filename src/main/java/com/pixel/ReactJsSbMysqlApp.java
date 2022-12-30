@@ -39,8 +39,8 @@ public class ReactJsSbMysqlApp {
 //						.map(i -> new User(i, "User " + i, "Address " + i, i, new Random().nextInt(100)));
 //		userFlux.subscribe(log::info);
 //		//userRepository.saveAll(userFlux);public
-		runAsyncDemo.saveEmployees(new File("empData.json"));
-		employeeRemainderService.sendRemainderToEmployee().get();
+		//runAsyncDemo.saveEmployees(new File("empData.json"));
+		//employeeRemainderService.sendRemainderToEmployee().get();
 	}
 	public List<User> loadEmployeeFromDB() {
 		return IntStream.rangeClosed(1,10)

@@ -8,3 +8,12 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
+
+camel:
+  component:
+    servlet:
+      mapping:
+        contextPath= /api/*
+
+  springboot:
+    main-run-controller:true

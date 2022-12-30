@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-@Component
+//@Component
 @ConditionalOnProperty(name = "jss.camel.seda.enabled" , havingValue = "true", matchIfMissing = true)
 public class SedaRoute extends RouteBuilder {
     @Override
